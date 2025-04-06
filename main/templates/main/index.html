@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mandelbrot Set</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <canvas id="mandelbrotCanvas"></canvas>
+    <div class="controls">
+        <button id="zoomIn">Zoom In</button>
+        <button id="zoomOut">Zoom Out</button>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="{% static 'main/mandelbrot.js' %}"></script>
+</body>
+</html> 

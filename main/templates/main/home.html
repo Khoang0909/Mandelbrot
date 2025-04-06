@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mandelbrot Set</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Generating Mandelbrot Set...</div>
+        </div>
+    </div>
+    <canvas id="mandelbrotCanvas"></canvas>
+    <div class="controls">
+        <button id="zoomIn">Zoom In</button>
+        <button id="zoomOut">Zoom Out</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div class="music-controls">
+        <button id="toggleMusic" class="music-button">
+            <span class="music-icon">🎵</span>
+        </button>
+    </div>
+    <script src="{% static 'main/mandelbrot.js' %}"></script>
+</body>
+</html> 
